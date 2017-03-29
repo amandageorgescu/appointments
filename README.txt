@@ -3,23 +3,23 @@ API:
 
 1. To add a new doctor:
 
-curl -H "Content-type: application/json" -X POST http://127.0.0.1:5000/doctors -d '{"last_name":"Smith","first_name":"Bob"}'
+curl -H "Content-type: application/json" -X POST https://appointmentsappcedar.herokuapp.com/doctors -d '{"last_name":"Smith","first_name":"Bob"}'
 
 2. To view all doctors:
 
-curl -H "Content-type: application/json" -X GET http://127.0.0.1:5000/doctors
+curl -H "Content-type: application/json" -X GET https://appointmentsappcedar.herokuapp.com/doctors
 
 3. To add a new patient:
 
-curl -H "Content-type: application/json" -X POST http://127.0.0.1:5000/patients -d '{"last_name":"Doe","first_name":"John","date_of_birth":"04-23-1990","gender":"M","phone_number":"321"}'
+curl -H "Content-type: application/json" -X POST https://appointmentsappcedar.herokuapp.com/patients -d '{"last_name":"Doe","first_name":"John","date_of_birth":"04-23-1990","gender":"M","phone_number":"321"}'
 
 4. To view appointments for a date and doctor:
 
-curl -H "Content-type: application/json" -X GET http://127.0.0.1:5000/appointments -d '{"doctor_id":"0","date":"04-01-2017"}'
+curl -H "Content-type: application/json" -X GET https://appointmentsappcedar.herokuapp.com/appointments -d '{"doctor_id":"0","date":"04-01-2017"}'
 
 5. To make an appointment:
 
-curl -H "Content-type: application/json" -X POST http://127.0.0.1:5000/appointments -d '{"patient_id":"0","doctor_id":"0","date":"04-01-2017","start_time":"02:59","end_time":"03:00","notes":"hello"}'
+curl -H "Content-type: application/json" -X POST https://appointmentsappcedar.herokuapp.com/appointments -d '{"patient_id":"0","doctor_id":"0","date":"04-01-2017","start_time":"02:59","end_time":"03:00","notes":"hello"}'
 
 _______________________________________________________________________________________
 
